@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
               const foundStatus = this.status.find(
                 (ele2) => ele2.id === item.statusId
               );
-              item.status = foundStatus.name;
+              item.status = foundStatus?.name;
             });
           });
       });
