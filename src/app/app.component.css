@@ -1,0 +1,61 @@
+.card {
+  width: 300px;
+  height: 200px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.task {
+  color: #4082a1;
+}
+
+.people-items {
+  display: flex;
+  align-items: center;
+}
+
+.assigned {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.avatar {
+  border: 1px solid #4082a1;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #4082a1;
+  color: white;
+  margin-right: 10px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.due-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  font-size: 12px;
+  border: 1px solid #4461b8;
+  background-color: #4461b8;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}

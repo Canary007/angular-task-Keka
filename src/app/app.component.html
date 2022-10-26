@@ -1,0 +1,22 @@
+<div class="card" *ngFor="let task of tasks">
+  <div class="task">{{ task.name }}</div>
+
+  <div class="people">
+    <span class="assigned"></span>
+    <div class="people-items">
+      <div class="avatar">
+        {{ task?.firstName | slice: 0:1 }}{{ task?.lastName | slice: 0:1 }}
+      </div>
+      <div class="name">{{ task?.firstName }} {{ task?.lastName }}</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="due-date">
+      <span class="title">DUE ON</span>
+      <span class="data">{{ task.dueDate }}</span>
+    </div>
+    <div class="status">
+      <span>{{ task?.status }}</span>
+    </div>
+  </div>
+</div>
